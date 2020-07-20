@@ -198,6 +198,7 @@ nav {
 .page-content {
   color: #FFFFFF;
   margin-top: 20px;
+  margin-bottom: 400px;
   width: 1000px;
   display: -ms-grid;
   display: grid;
@@ -207,7 +208,6 @@ nav {
       grid-template-rows: repeat(6, auto);
   grid-gap: 3%;
   grid-row-gap: 7%;
-  margin-left: 10px;
 }
 
 .page-content-title {
@@ -337,5 +337,59 @@ nav {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+}
+
+.cta-element {
+  margin-top: 50px;
+  background-color: #FFFFFF;
+  color: #171717;
+  width: 95%;
+  padding: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: center;
+}
+
+.cta-element-h2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.cta-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-align: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.cta-button {
+  margin-top: 20px;
+  background-color: #171717;
+  color: #FFFFFF;
+  border: none;
+  font-size: 16px;
+  padding: 10px 19px;
+  font-weight: 600;
+  display: block;
+  width: 150px;
+}
+
+.cta-button:hover {
+  background-color: gray;
 }
 /*# sourceMappingURL=style.css.map */
