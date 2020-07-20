@@ -189,4 +189,23 @@ nav {
 .doggo-button:hover {
   background-color: gray;
 }
+
+.page-content {
+  color: #FFFFFF;
+  margin-top: 20px;
+  width: 80%;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
+  -ms-grid-rows: (auto)[6];
+      grid-template-rows: repeat(6, auto);
+  margin-left: 10px;
+}
+
+.page-content-title {
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 3;
+  grid-column: 1/4;
+}
 /*# sourceMappingURL=style.css.map */

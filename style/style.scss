@@ -135,3 +135,20 @@ nav {
 .doggo-button:hover {
     background-color: $gray;
 }
+.page-content {
+    color: $light;
+    margin-top: 20px;
+    width: 80%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(6, auto);
+    margin-left: 10px;
+}
+.page-content-title {
+    grid-column: 1/4;
+}
+@mixin box-item {
+    height: 200px;
+    width: 300px;
+    background: $light;
+}
