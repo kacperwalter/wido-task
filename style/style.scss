@@ -6,6 +6,7 @@ body {
     box-sizing: border-box;
     padding: 0;
     margin: 0;
+    font-family: 'Fira Code', sans-serif;
 }
 .hamburger {
     padding: 30px;
@@ -18,7 +19,7 @@ body {
 .hamburger--active {
     transform: translateX(250px);
 }
-.hamburger, .navigation {
+.hamburger, .navigation, .page-title {
     transition: transform .3s .1s ease-in-out;
 }
 .hamburger-box {
@@ -86,4 +87,16 @@ body {
         text-decoration: none;
         color: $dark;
     }
+}
+nav {
+    display: flex;
+}
+.page-title {
+    align-self: center;
+    align-content: center;
+    color: $light;
+}
+.page-title--active {
+    transform: translateX(250px);
+    transition: transform .2s .1s ease-in-out;
 }
