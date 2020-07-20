@@ -50,4 +50,18 @@ body {
 .hamburger-inner::after {
   top: 10px;
 }
+
+.hamburger--active .hamburger-inner {
+  background-color: transparent;
+}
+
+.hamburger--active .hamburger-inner:before {
+  -webkit-transform: translateY(10px) rotate(45deg);
+          transform: translateY(10px) rotate(45deg);
+}
+
+.hamburger--active .hamburger-inner:after {
+  -webkit-transform: translateY(-10px) rotate(-45deg);
+          transform: translateY(-10px) rotate(-45deg);
+}
 /*# sourceMappingURL=style.css.map */
