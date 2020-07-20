@@ -81,6 +81,10 @@ body {
     margin-top: 50px;
     list-style: none;
 }
+.navigation-title {
+    font-size: 16px;
+    font-weight: 600;
+}
 .navigation-item {
     margin-bottom: 20px;
 
@@ -138,17 +142,73 @@ nav {
 .page-content {
     color: $light;
     margin-top: 20px;
-    width: 80%;
+    width: 1000px;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(6, auto);
+    grid-gap: 3%;
+    grid-row-gap: 7%;
     margin-left: 10px;
 }
 .page-content-title {
+    font-size: 30px;
     grid-column: 1/4;
+    margin-top: 60px;;
+    margin-bottom: -35px;
+    display: flex;
+    justify-content: center;
 }
 @mixin box-item {
     height: 200px;
     width: 300px;
     background: $light;
+}
+.box-left-1 {
+    @include box-item;
+    grid-row: 2/3;
+    grid-column: 1/2;
+}
+.box-left-content-1 {
+    grid-row: 2/3;
+    grid-column: 2/4;
+}
+.box-right-2 {
+    @include box-item;
+    grid-row: 3/4;
+    grid-column: 3/4;
+}
+.box-right-content-2 {
+    grid-row: 3/4;
+    grid-column: 1/3;
+}
+.box-left-3 {
+    @include box-item;
+    grid-row: 4/5;
+    grid-column: 1/2;
+} 
+.box-left-content-3 {
+    grid-row: 4/5;
+    grid-column: 2/4;
+}
+.box-right-4 {
+    @include box-item;
+    grid-row: 5/6;
+    grid-column: 3/4;
+}
+.box-right-content-4 {
+    grid-row: 5/6;
+    grid-column: 1/3;
+}
+.box-left-5 {
+    @include box-item;
+    grid-row: 6/7;
+    grid-column: 1/2;
+}
+.box-left-content-5 {
+    grid-row: 6/7;
+    grid-column: 2/4;
+}
+.center-content {
+    display: flex;
+    justify-content: center;
 }
