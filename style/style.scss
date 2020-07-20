@@ -15,6 +15,12 @@ body {
     border: 0;
     margin: 0;
 }
+.hamburger--active {
+    transform: translateX(250px);
+}
+.hamburger, .navigation {
+    transition: transform .3s .1s ease-in-out;
+}
 .hamburger-box {
     width: 40px;
     height: 24px;
@@ -32,12 +38,15 @@ body {
     left: 0;
     top: 50%;
     transform: translateY(-50%);
+    transition: background-color .1s .2s ease-in-out;
 }
 .hamburger-inner::before,
 .hamburger-inner::after {
     @include hamburger-line;
     content: '';
     left: 0;
+
+    transition: transform .2s .2s ease-in-out;
 }
 .hamburger-inner::before {
     top: -10px;
@@ -53,4 +62,28 @@ body {
 }
 .hamburger--active .hamburger-inner:after {
     transform: translateY(-10px) rotate(-45deg) ;
+}
+.navigation {
+    height: 100%;
+    width: 250px;
+    background-color: $light;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: translateX(-250px);
+}
+.navigation--active {
+    transform: translateX(0px);
+}
+.navigation-list {
+    margin-top: 50px;
+    list-style: none;
+}
+.navigation-item {
+    margin-bottom: 20px;
+
+    a {
+        text-decoration: none;
+        color: $dark;
+    }
 }
