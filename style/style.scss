@@ -136,6 +136,9 @@ nav {
 .doggo {
     height: 30%;
 }
+.doggo img {
+    max-height: 40%;
+}
 .doggo-button:hover {
     background-color: $gray;
 }
