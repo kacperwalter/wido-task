@@ -281,3 +281,58 @@ td {
     padding: 20px 30px;
     text-align: center;
 }
+caption {
+    color: $light;
+    padding: 15px;
+    caption-side: bottom;
+}
+.article-title {
+    display: flex;
+    justify-content: center;
+    color: $light;
+    margin-top: 40px;
+    margin-bottom: 50px;
+}
+.art {
+    counter-reset: section;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 200px 50px;
+    margin-left: 45px;
+    margin-right: 45px;
+}
+.article {
+    position: relative;
+}
+.article:nth-child(odd) {
+    grid-column: 2;
+}
+.article:nth-child(even) {
+    grid-column: 1;
+
+}
+.article::before {
+    counter-increment: section;
+    z-index: -1 ;
+    font-weight: bold;
+    top: -70%;
+    position: absolute;
+    font-size: 330px;
+    color: $light;
+    content: counter(section );
+    color: $gray;
+}
+.article:nth-child(odd)::before {
+    left: -20%;
+}
+.article:nth-child(even)::before {
+    right: 0;
+}
+.article-header {
+    font-size: 25px;
+    color: $light;
+}
+.article-paragraph {
+    color: $light;
+    font-size: 17px;
+}
