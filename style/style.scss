@@ -336,3 +336,63 @@ caption {
     color: $light;
     font-size: 17px;
 }
+.center-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: $light;
+    margin-top: 100px;
+}
+.form-box {
+    width: 460px;
+    height: 495px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 20px 45px;
+    border: 2px solid $light;
+    text-align: center;
+
+
+    h2 {
+        font-size: 21px;
+        margin: 0;
+    }
+    p {
+        font-size: 17px;
+        font-weight: 300;
+    }
+    input {
+        font-size: 16px;
+    }
+    label {
+        margin-top: 20px;
+        font-size: 10px;
+        font-weight: 300;
+    }
+    form {
+        margin-top: 45px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    button {
+        margin-top: 50px;
+        display: block;
+        background-color: $light;
+        border: none;
+        font-size: 14px;
+        padding: 10px 19px;
+        font-weight: 600;
+    }
+    input {
+        background-color: transparent;
+        color: $light;
+        border: none;
+        border-bottom: 1px solid $light;
+        width: 60%;
+        margin: 10px 0;
+        font-weight: 300;
+    }
+}
