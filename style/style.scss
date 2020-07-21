@@ -228,6 +228,7 @@ nav {
     justify-content: center;
 }
 .cta-content {
+    margin-top: -7px;
     display: flex;
     text-align: center;
     justify-content: center;
@@ -242,7 +243,38 @@ nav {
     font-weight: 600;
     display: block;
     width: 150px;
+    margin-top: -3px;
 }
 .cta-button:hover {
     background-color: $gray;
+}
+.table-element {
+    display: flex;
+    justify-content: center;
+}
+.table-title {
+    margin-top: 35px;
+    color: $light;
+    display: flex;
+    justify-content: center;
+}
+thead {
+    font-size: 21px;
+    background-color: $light;
+    color: $dark;
+}
+table {
+    margin-top: 10px;
+    border-collapse: collapse;
+    border: 3px solid $light;
+}
+tbody {
+    color: $light;
+}
+th,
+tr,
+td {
+    border: 2px solid $light;
+    padding: 20px 30px;
+    text-align: center;
 }

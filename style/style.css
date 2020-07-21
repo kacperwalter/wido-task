@@ -368,6 +368,7 @@ nav {
 }
 
 .cta-content {
+  margin-top: -7px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -387,9 +388,54 @@ nav {
   font-weight: 600;
   display: block;
   width: 150px;
+  margin-top: -3px;
 }
 
 .cta-button:hover {
   background-color: gray;
+}
+
+.table-element {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.table-title {
+  margin-top: 35px;
+  color: #FFFFFF;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+thead {
+  font-size: 21px;
+  background-color: #FFFFFF;
+  color: #171717;
+}
+
+table {
+  margin-top: 10px;
+  border-collapse: collapse;
+  border: 3px solid #FFFFFF;
+}
+
+tbody {
+  color: #FFFFFF;
+}
+
+th,
+tr,
+td {
+  border: 2px solid #FFFFFF;
+  padding: 20px 30px;
+  text-align: center;
 }
 /*# sourceMappingURL=style.css.map */
