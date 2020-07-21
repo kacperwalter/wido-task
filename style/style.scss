@@ -396,3 +396,22 @@ caption {
         font-weight: 300;
     }
 }
+footer {
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: auto;
+    color: $dark;
+    background-color: $light;
+    padding: 15px;
+
+    ul {
+        list-style-type: none;
+    }
+    .col-1 {
+        font-size: 21px;
+    }
+    .col-4 {
+        font-weight: bold;
+    }
+}

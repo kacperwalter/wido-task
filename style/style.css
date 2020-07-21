@@ -604,4 +604,29 @@ caption {
   margin: 10px 0;
   font-weight: 300;
 }
+
+footer {
+  margin-top: 50px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[4];
+      grid-template-columns: repeat(4, 1fr);
+  -ms-grid-rows: auto;
+      grid-template-rows: auto;
+  color: #171717;
+  background-color: #FFFFFF;
+  padding: 15px;
+}
+
+footer ul {
+  list-style-type: none;
+}
+
+footer .col-1 {
+  font-size: 21px;
+}
+
+footer .col-4 {
+  font-weight: bold;
+}
 /*# sourceMappingURL=style.css.map */
